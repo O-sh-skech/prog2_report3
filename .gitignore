@@ -5,3 +5,4 @@
 build
 .DSstore
 app/build/
+.vscode/
