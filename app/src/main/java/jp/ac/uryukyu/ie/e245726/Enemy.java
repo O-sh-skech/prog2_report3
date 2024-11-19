@@ -27,7 +27,7 @@ public class Enemy {
     /**
      * 敵の体力を取得します。
      *
-     * @return ヒットポイント
+     * @return 体力の値
      */
     public int getHitpoint() {
         return this.hitPoint;
