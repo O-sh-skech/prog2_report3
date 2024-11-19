@@ -15,28 +15,68 @@ public class Enemy {
     private boolean dead;
 
     //getterメソッド
-    public String getName(){
+    /**
+     * 敵の名前を取得します。
+     *
+     * @return 敵の名前
+     */
+    public String getName() {
         return this.name;
-    }
-    public int getHitPoint(){
+        }
+    
+    /**
+     * 敵の体力を取得します。
+     *
+     * @return ヒットポイント
+     */
+    public int getHitpoint() {
         return this.hitPoint;
     }
-    public int getAttack(){
+
+    /**
+     * 敵の攻撃力を取得します。
+     *
+     * @return 攻撃力
+     */
+    public int getAttack() {
         return this.attack;
     }
-    public boolean getDead(){
+
+    /**
+     * 敵が死亡しているかどうかを取得します。
+     *
+     * @return 死亡している場合は true、それ以外は false
+     */
+    public boolean getDead() {
         return this.dead;
     }
+
     //setterメソッド
+    /**
+     * 敵の名前を変更します。
+     * @param _n 変更したい名前を入れてください
+     */
     public void setName(String _n){
         this.name=_n;
     }
+    /**
+     * 敵の体力を変更します。
+     * @param _h 変更したい体力の値を入れてください
+     */
     public void setHitPoint(int _h){
         this.hitPoint = _h;
     }
+    /**
+     * 敵の攻撃力を変更します。
+     * @param _a 変更したい攻撃力の値を入れてください。
+     */
     public void setAttack(int _a){
         this.attack = _a;
     }
+    /**
+     * 敵の死亡判定を変更します。
+     * @param _d 死亡ならtrue、生存ならfalseを入れてください。
+     */
     public void setDead(boolean _d){
         this.dead = _d;
     }
